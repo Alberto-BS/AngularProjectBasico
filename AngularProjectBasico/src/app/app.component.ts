@@ -6,9 +6,17 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  count = 0;
-  mensaje: string = "";
-  dimeMensaje(): string {
-    return this.mensaje + this.count;
+  numero1 = 0;
+  numero2 = 0;
+  operacion = "";
+  resultado = 0;
+  dameResultado() {
+    if (this.operacion == "+") {
+      this.resultado =  Number(this.numero1) + Number(this.numero2);
+    } else {
+      this.resultado = this.numero1 - this.numero2;
+    }
+    return this.resultado.toString();
+
   }
 }
