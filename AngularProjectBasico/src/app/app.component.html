@@ -1,11 +1,9 @@
 
 
-<main class="main">
-      <button (click)="Compuesto = title + mensaje">DAlo</button>
-      <h1>Hello, {{ title }}</h1>
-      <h2>Saludamos como: {{mensaje}} </h2>
-      <p>Congratulations! Your app is running. 🎉</p>
-</main>
+<button id="hola" (click)="mensaje = 'Hola';count=count+1;">Hola</button>
+<button id="adios" (click)="mensaje = 'Adios';count=count+1;">Adios</button>
+{{ dimeMensaje()}}
+
 
 
 

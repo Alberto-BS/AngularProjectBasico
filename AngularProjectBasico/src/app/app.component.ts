@@ -6,7 +6,9 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'Hola Mundo, Jacinto!!!';
-  mensaje = 'Epaaaaaa';
-  Compuesto = '';
+  count = 0;
+  mensaje: string = "";
+  dimeMensaje(): string {
+    return this.mensaje + this.count;
+  }
 }
